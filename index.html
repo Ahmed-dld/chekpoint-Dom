@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>My Shopping</title>
+    
+</head>
+<body>
+    <header>
+        <div class="overlay" ></div>
+        <nav>
+          <h2>SHOP</h2>
+          <h2>T_Shirt Collection</h2> 
+         
+      <ul>
+        <li> <a href="index.html">Home</a> </li>
+        <li> <a href="#">About</a></li>
+      </ul>
+        </nav>
+        <img src="images/logo.jpg">
+
+        </header>   
+</div>
+<div class="container">
+    <div class="articles">
+
+    </div>
+    <div class="az">
+    <img src="images/adidas.jpg">
+    <h3 class="tit" id="brand1">-ADIDAS-</h3>
+    <div id="heading">
+        <svg id="color" xmlns="http://www.w3.org/2000/svg" width="70" height="50" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+          </svg>
+    <button onclick = "changeColor('red');">J'aime!</button>
+</div>
+    <div class="prod">
+        <h4 id="price1">19.99</h4> 
+
+    </div>
+    <div class="inputs">
+        <input id="quantity1" type=number value="1" min=1 max=999>
+<button onclick="increment()">+</button>
+<button onclick="decrement()">-</button>
+        <select id="size1" name="size1" onclick="deleteE('message1')">
+            <option value="size" disabled selected>Size</option>
+            <option value="XS" >XS</option>
+            <option value="S" >S</option>
+            <option value="M" >M</option>
+            <option value="L" >L</option>
+            <option value="XL" >XL</option>
+        </select>
+        <div>
+            <button class="addTo" onclick="add(1)">Add Cart</button>
+        </div>
+    </div>
+    <p id="message1"></p>
+</div>
+<div class="az">
+    <img src="images/nike.jpg">
+    <h3 class="tit" id="brand2">-NIKE-</h3>
+    <div class="prod">
+        <h4 id="price2">29.90</h4>  
+    </div> 
+    <div class="inputs">
+        <input type="number" id="quantity2" min="1" max="999" value="1">
+        <select id="size2" name="size2" onclick="deleteE('message2')">
+            <option value="size" disabled selected>Size</option>
+            <option value="XS" >XS</option>
+            <option value="S" >S</option>
+            <option value="M" >M</option>
+            <option value="L" >L</option>
+            <option value="XL" >XL</option>
+        </select>
+        <div>
+            <button class="addTo" onclick="add(2)">Add Cart</button>
+        </div>
+        </div>
+      <p id="message2"></p>
+</div>
+<div class="az">
+<img src="images/michael.jpg">
+<h3 class="tit" id="brand3">-MICHAEL-</h3>
+<div class="prod">
+    <h4 id="price3">99.90</h4>
+    
+</div> 
+<div class="inputs">
+    <input type="number" id="quantity3" min="1" max="9" value="1">
+    <select id="size3" name="size3" onclick="deleteE('message3')">
+        <option value="size" disabled selected>Size</option>
+        <option value="XS" >XS</option>
+        <option value="S" >S</option>
+        <option value="M" >M</option>
+        <option value="L" >L</option>
+        <option value="XL" >XL</option>
+    </select>
+    <div>
+        <button class="addTo" onclick="add(3)">Add Cart</button>
+    </div>
+    </div>
+    <p id="message3"></p>
+</div>
+<div class="az">
+    <img src="images/polo.jpg">
+    <h3 class="tit" id="brand4">-POLO-Ralph-</h3>
+<div class="prod">
+    <h4 id="price4">99.90</h4>
+</div> 
+<div class="inputs">
+    <input type="number" id="quantity4" min="1" max="9" value="1">
+    <select id="size4" name="size4" onclick="deleteE('message4')">
+        <option value="size" disabled selected>Size</option>
+        <option value="XS" >XS</option>
+        <option value="S" >S</option>
+        <option value="M" >M</option>
+        <option value="L" >L</option>
+        <option value="XL" >XL</option>
+    </select>
+</div>
+    <div>
+        <button class="addTo" onclick="add(4)">Add Cart</button>
+    </div>
+    </div>
+    <p id="message4"></p>
+</div>
+<div class="cart">
+    <h3 class="tit">My articles</h3>
+    <ul id="items">
+
+    </ul>
+    <h3 id="total" style="text-align: right;">Total: 0 $</h3>
+</div>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>

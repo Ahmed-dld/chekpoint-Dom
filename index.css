@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+header {
+    background-image: url('images/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150px;
+    position: relative;
+    
+}
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+    
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+
+}
+
+.addTo, .tit {
+   background-color: #FEBFD2
+   ;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.az {
+    background-color:rgb(214, 219, 223);
+    margin-right: 20px;
+    margin-left: 300px;
+    margin-top: 100px;
+    display: flex;
+}
+#quantity1 , 
+#quantity2,
+#quantity3,
+#quantity4 {
+ background-color:palevioletred;
+ width: 70%;
+}
+  
